@@ -59,9 +59,16 @@ except ValueError:
     print("\nFormato de fecha incorrecto. Por favor usa DD/MM/AAAA.")
 
 ###  4.2. Dockerfile
-"""FROM python:3.11-slim
+"""# Usaremos una imagen base oficial de python
+FROM python:3.11-slim-bullseye
+
+
+# Establecer el directorio de trabajo
 WORKDIR /app
+
+# Copiar el archivo al contenedor
 COPY app.py .
+
 CMD ["python", "app.py"]"""
 
 ### 4.3 Comandos Ejecutados
@@ -79,5 +86,7 @@ Por favor, ingresa tu nombre: Juan
 Ingresa tu fecha de nacimiento (formato DD/MM/AAAA): 09/09/1998
 
 Hola Juan! Tienes 26 años.
-
+### imagen del tag:
+![Logo Docker](https://github.com/MiguelAngelLH/docker_oscar/blob/main/tag.png)
+### resultado  en consola:
 ![Logo Docker](https://github.com/MiguelAngelLH/docker_oscar/blob/main/imagen.png)
