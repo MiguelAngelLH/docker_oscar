@@ -1,10 +1,10 @@
 # Dockerización de una Aplicación Python
 
 ## Información General
-- **Asignatura**: Desarrollo Web Integral
-- **Docente**: [Nombre del Profesor]
-- **Autor(es)**: Miguel Ángel
-- **Fecha de Entrega**: [DD/MM/AAAA]
+- **Asignatura**: Desarrollo Web Integral IDGS91-MA2025
+- **Docente**: Oscar Lira Uribe
+- **Autor(es)**: Miguel Ángel Lopez Hernandez
+- **Fecha de Entrega**: [10/07/2025]
 
 ## 1. Objetivos
 
@@ -35,7 +35,7 @@ Lenguaje de programación utilizado para desarrollar la lógica de la aplicació
 ## 4. Desarrollo de la Práctica
 
 ### 4.1. Código Fuente (app.py)
-"""python
+python
 from datetime import datetime
 
 def calcular_edad(fecha_nacimiento):
@@ -56,7 +56,7 @@ try:
     edad = calcular_edad(fecha_nac)
     print(f"\nHola {nombre}! Tienes {edad} años.")
 except ValueError:
-    print("\nFormato de fecha incorrecto. Por favor usa DD/MM/AAAA.")"""
+    print("\nFormato de fecha incorrecto. Por favor usa DD/MM/AAAA.")
 
 ###  4.2. Dockerfile
 """FROM python:3.11-slim
@@ -80,4 +80,4 @@ Ingresa tu fecha de nacimiento (formato DD/MM/AAAA): 09/09/1998
 
 Hola Juan! Tienes 26 años.
 
-![Texto alternativo](image.png)
+![Logo Docker](https://github.com/MiguelAngelLH/docker_oscar/blob/main/imagen.png)
